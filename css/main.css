@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 100%);
+  margin: 3rem 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.product-card__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-card__desc {
+  padding: 2rem;
+}
+.product-card__category {
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: hsl(228deg, 12%, 48%);
+  letter-spacing: 0.5rem;
+}
+.product-card__title {
+  margin: 2rem 0;
+  line-height: 1;
+  font-family: "Fraunces", serif;
+}
+.product-card__title h1 {
+  font-size: 3.2rem;
+}
+.product-card__text {
+  margin: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228deg, 12%, 48%);
+  line-height: 1.5;
+}
+.product-card__text p {
+  font-size: 1.4rem;
+}
+.product-card__price {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+.product-card__price-now {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.2em;
+  color: hsl(158deg, 36%, 37%);
+}
+.product-card__price-before {
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 1.6rem;
+}
+.product-card__btn {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(158deg, 36%, 37%);
+}
+
+@media (min-width: 992px) {
+  .product-card {
+    flex-direction: row;
+    max-width: 640px;
+    max-height: 480px;
+  }
+  .product-card__desc {
+    width: 50%;
+  }
+  .product-card .product-card-img {
+    width: 50%;
+  }
+  .product-card__category {
+    margin: 2rem;
+    font-size: 1.2rem;
+  }
+  .product-card__title {
+    margin: 2rem;
+  }
+  .product-card__text {
+    margin: 2rem;
+  }
+  .product-card__img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    content: url(../images/image-product-desktop.jpg);
+  }
+}/*# sourceMappingURL=main.css.map */
